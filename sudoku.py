@@ -2,8 +2,8 @@ import csv
 import sys
 from collections import Counter 
 from itertools import chain
-from PyQt5.QtWidgets import QMainWindow, QApplication, QWidget, QTextEdit, QPushButton
-from PyQt5 import uic
+from PyQt6.QtWidgets import QMainWindow, QApplication, QWidget, QTextEdit, QPushButton
+from PyQt6 import uic
 
 
 def update_value(x, y):
@@ -250,4 +250,4 @@ class UI(QMainWindow):
 grid = create_grid()
 app = QApplication(sys.argv)
 window = UI()
-app.exec_()
+app.exec()
